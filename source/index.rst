@@ -3,21 +3,29 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to ATS Docs and Tips's documentation!
+Welcome to ATS Docs and Tips!
 =============================================
+
+I hope this to be a place where all the people in the community could contribute docs and tips to boost ATS users.
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
-   
+
    installation
+   features
+   examples
+   library
+   todo
 
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. comment
+.. Indices and tables
+.. ==================
+.. 
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
 
