@@ -30,7 +30,7 @@ Before installing ATS 2, we need the latest version of ATS 1 first.
 
 #. Make 
 
-	.. code-block :: bash
+	.. code-block:: bash
 
 		make all
 
@@ -59,3 +59,27 @@ Next, we are building ATS 2. CMake 2.8+ is recommended.
 		cmake ..
 		make
 
+		mkdir ~/ats2/bin
+		cp patsopt ~/ats2/bin/
+
+
+Next, build libraries and tools
+
+	.. code-block:: bash
+
+		cd ~/ats2
+		make -f codegen/Makefile_atslib
+		make -f codegen/Makefile_atscntrib
+
+		cd ~/ats2/ccomp
+		make
+
+		cd ~/ats2/libatsyntax
+		make
+
+		cd ~/ats2/utils/atscc
+		make
+		cp patscc ~/ats2/bin/
+
+		cd ~/ats2/utils/atsyntax
+		make
