@@ -65,14 +65,24 @@ Next, we are building ATS 2. CMake 2.8+ is recommended.
 
 Next, build libraries and tools
 
+#. Generate source code from templates
+
 	.. code-block:: bash
 
 		cd ~/ats2
 		make -f codegen/Makefile_atslib
 		make -f codegen/Makefile_atscntrib
 
+#. Make C Target Compiler and Libraries
+
+	.. code-block:: bash
+
 		cd ~/ats2/ccomp
 		make
+
+#. Make utilities
+
+	.. code-block:: bash
 
 		cd ~/ats2/libatsyntax
 		make
