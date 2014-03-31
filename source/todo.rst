@@ -47,3 +47,8 @@ https://groups.google.com/forum/#!topic/ats-lang-users/88CYxwKl0M0
 
 ///////////////////
 $showtype m
+
+//////
+In ATS1: #LOCATION and #FILENAME
+in ATS2: $mylocation and $myfilename
+https://groups.google.com/forum/#!topic/ats-lang-users/YDS58Hbs2aw

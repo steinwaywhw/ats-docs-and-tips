@@ -48,3 +48,19 @@ For a function like ``fun foo (someargs: sometype):<> sometype``, the ``:<>`` pa
 
 ``prf``
 	the function is a proof function
+
+
+Quantifiers
+===============
+
+In ATS, ``[]`` is mostly used as extential quantifier, while ``{}`` is mostly used as universal quantifier.
+
+For example, suppose ``MUL`` encodes the multiplication relationship as defined `here <http://www.ats-lang.org/DOCUMENT/INTPROGINATS/HTML/c2829.html>`_, we can write something like this.
+
+.. code-block:: text
+
+	prfun mutiplication_is_total {m,n:int} (): [p:int] MUL (m, n, p)
+
+which will be interpreted as 
+
+	For all integers *m* and *n*, there exists some integer *p* such that ``MUL (m, n, p)`` is ture.

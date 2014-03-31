@@ -7,7 +7,7 @@ Install ATS 2 from Source Code
 
 Before installing ATS 2, we need the latest version of ATS 1 first. 
 
-#. Download ATS 0.2.10 from http://www.cs.bu.edu/~hwxi/ATS/IMPLEMENTATION/Anairiats/ats-lang-anairiats-0.2.10-unstable.tgz
+#. Download ATS 0.2.10 from http://sourceforge.net/projects/ats-lang/files/
 #. Unzip it into a folder, e.g. ``~/ats``
 #. Setup environment variables
 
@@ -25,6 +25,8 @@ Before installing ATS 2, we need the latest version of ATS 1 first.
 
 		cd ~/ats
 		aclocal
+		autoheader
+		automake --force-missing --add-missing
 		autoconf
 		./configure
 
